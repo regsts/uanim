@@ -17,15 +17,6 @@ font-style: normal;
 font-weight: normal;
 }
 
-/* Временно */
-a[title="Instagram"],
-a[title="Facebook"],
-a[title="Whatsup"],
-a[title="LinkedIn"],
-a[title="Behance"] {
-  display: none !important;
-}
-
 html, body {height:100%;}
 body {
   margin:0;
@@ -35,12 +26,10 @@ body {
 }
 .green {color: #20EB00;}
 section {overflow-x:hidden; margin: 0 auto;}
-h1 {display:none;}
 .mobi {display:none !important;}
 a  {color:inherit; text-decoration:inherit;}
 .anchor {display:block; visibility:hidden; position:relative;}
-#portfolio_ {top:-60px;}
-#services_ {top:50px;}
+#services_ {top:70px;}
 
 .fix {
   position: fixed;
@@ -50,27 +39,38 @@ a  {color:inherit; text-decoration:inherit;}
 }
 .desk {
   display: flex;
-  height: 81px;
+  justify-content: center;
+  height: 90px;
   margin: 0 auto;
-  width: 98%;
-  max-width: 1220px;
-  position: relative;
 }
-.goHome {margin: auto auto auto 0; line-height:0;}
-#dPicLogo {width:48px; height:54px;}
-nav    {
-  display:flex; justify-content: space-between;
-  margin:auto;
-  width: 55%;
+.goHome {margin: auto 4rem auto auto; line-height:0;}
+#dPicLogo {width:64px; height:75px;}
+.desk nav    {
+  display:flex;
+  justify-content: center;
+  margin: auto 0;
   font-family: "Grotesque", Arial, sans-serif;
-  font-size: 13px;
+  font-size: 16px;
 }
-nav *  {margin:auto;}
-nav *:first-child  {margin:auto auto auto 0;}
-nav *:last-child  {margin:auto 0 auto auto;}
-nav a:hover {color:#20EB00; border-bottom: solid 2px #20EB00; padding: 12px 0 10px 0;}
-.soc   {display:flex; width:90px; margin:auto; justify-content: space-between; align-items: center;}
-.underLang {width:45px; margin: auto 0;}
+.desk nav a {
+    margin: auto 4rem auto 0;
+    white-space: nowrap;
+}
+.desk nav a:last-child  {margin:auto 0;}
+.desk nav a:hover {color:#20EB00; border-bottom: solid 2px #20EB00; padding: 12px 0 10px 0;}
+.soc {
+    display: flex;
+    margin: auto 4rem;
+    align-items: center;
+}
+.soc a {margin-right: 15px;}
+.soc a:last-child {margin-right: 0;}
+.underLang {
+    position: relative;
+    width: 45px;
+    height: 100%;
+    margin: auto auto auto 0;
+}
 .lang   {
   position: absolute;
   right: 0;
@@ -87,12 +87,19 @@ nav a:hover {color:#20EB00; border-bottom: solid 2px #20EB00; padding: 12px 0 10
 .dsp {display:block !important;}
 
 #contact3, #contact4, #contact5   {width:20px; height:20px;}
-.underFix   {height:81px;}
 
 .openedMenu {display:none;}
 
-#enterDesk   {background:black; position:relative;}
-#video    {width:100%; height:auto;}
+#enterDesk   {
+    background:black;
+    height: 100vh;
+    overflow: hidden;
+}
+#video    {
+    object-fit: cover;
+    max-width: 100%;
+    min-height: 100vh;
+}
 #enterMobi   {display:none;}
 
 .bg {                         /* BACKGROUNDS */
@@ -105,9 +112,10 @@ nav a:hover {color:#20EB00; border-bottom: solid 2px #20EB00; padding: 12px 0 10
     url(pic/mapDots.png),  /* точки на карте */
     url(pic/map.png),         /* карта в about */
     url(pic/bg07.png),        /* зеленый крест слева от Advntgs */
-    url(pic/bg06.png),        /* серый фон этого креста */
+    url(pic/bg29.png),        /* серый фон этого креста */
+    url(pic/bg06.png),        /* зеленый крест справа от Advntgs */
     url(pic/bg11.png),        /* крест для головы */
-    url(pic/bg10.png),        /* шар подсветки головы */
+    url(pic/bg31.png),        /* шар подсветки головы */
     url(pic/bg08.png),        /* голова в Advntgs */
     url(pic/bg09.png),        /* сетка для головы */
     url(pic/bg14.png),        /* сетка для Сервисов */
@@ -115,27 +123,28 @@ nav a:hover {color:#20EB00; border-bottom: solid 2px #20EB00; padding: 12px 0 10
     url(pic/bg15.png),        /* зеленый крест для Сервисов */
     url(pic/bg17.png),        /* зеленый крест после Сервисов */
     url(pic/bg16.png),        /* серый крест после Сервисов */
-    url(pic/bg18.png);        /* скульптура */
+    url(pic/bg30.png);        /* скульптура */
   background-position:
-    137px 901px,     /* черно-зеленый крест слева */
-    337px 1120px,   /* малый светящийся крест правее */
-    923px 958px,     /* кресты справа */
-    0px 100px,         /* шар подсветки волн */
-    0px -200px,        /* волны под картинками портфолио */
-    280px 1550px,    /* точки на карте */
-    center 1505px,    /* карта в about */
-    80px 2000px,      /* зеленый крест слева от Advntgs */
-    0px 1945px,        /* серый фон этого креста */
-    1250px 2510px,   /* крест для головы */
-    300px 1950px,     /* шар подсветки головы */
-    709px 2143px,     /* голова в Advntgs */
-    709px 2143px,     /* сетка для головы */
-    220px 3085px,     /* сетка для Сервисов */
-    0px 2140px,         /* подсветка зеленого креста для Сервисов */
-    60px 2980px,       /* зеленый крест для Сервисов */
-    1235px 3620px,    /* зеленый крест после Сервисов */
-    1235px 3560px,    /* серый крест после Сервисов */
-    0px 4340px;          /* скульптура */
+    300px 1151px,    /* черно-зеленый крест слева */
+    500px 1370px,     /* малый светящийся крест правее */
+    1220px 1208px,   /* кресты справа */
+    0px 350px,          /* шар подсветки волн */
+    0px 50px,            /* волны под картинками портфолио */
+    480px 1800px,     /* точки на карте */
+    center 1800px,     /* карта в about */
+    280px 2250px,     /* зеленый крест слева от Advntgs */
+    200px 2195px,     /* серый фон этого креста */
+    1700px 2200px,   /* зеленый крест справа от Advntgs */
+    1450px 2810px,   /* крест для головы */
+    700px 2350px,     /* шар подсветки головы */
+    910px 2440px,     /* голова в Advntgs */
+    910px 2440px,     /* сетка для головы */
+    20px 3340px,       /* сетка для Сервисов */
+    0px 2540px,         /* подсветка зеленого креста для Сервисов */
+    60px 3380px,       /* зеленый крест для Сервисов */
+    1520px 4150px,    /* зеленый крест после Сервисов */
+    1550px 4090px,    /* серый крест после Сервисов */
+    300px bottom;      /* скульптура */
   background-size:
     198px,        /* черно-зеленый крест слева */
     91px,          /* малый светящийся крест правее */
@@ -146,43 +155,75 @@ nav a:hover {color:#20EB00; border-bottom: solid 2px #20EB00; padding: 12px 0 10
     1045px,       /* карта в about */
     164px,         /* зеленый крест слева от Advntgs */
     231px,         /* серый фон этого креста */
-    167px,         /* крест для головы */
-    1165px,       /* шар подсветки головы */
-    740px,         /* голова в Advntgs */
-    740px,         /* сетка для головы */
-    1000px,       /* сетка для Сервисов */
-    1354px,       /* подсветка зеленого креста для Сервисов */
-    242px,         /* зеленый крест для Сервисов */
-     110px,        /* зеленый крест после Сервисов */
-    212px,         /* серый крест после Сервисов */
-    674px;         /* скульптура */
+    160px,         /* зеленый крест справа от Advntgs */
+    196px,         /* крест для головы */
+    1375px,       /* шар подсветки головы */
+    884px,         /* голова в Advntgs */
+    884px,         /* сетка для головы */
+    1728px,       /* сетка для Сервисов */
+    1631px,       /* подсветка зеленого креста для Сервисов */
+    292px,         /* зеленый крест для Сервисов */
+    133px,         /* зеленый крест после Сервисов */
+    256px,         /* серый крест после Сервисов */
+    730px;         /* скульптура */
   background-repeat:no-repeat;
   margin: 0 auto;
 }
 
-.portfBigPicLink1 {display: none;}
-.portfPic {box-shadow: 0px 0px 10px 0px #20EB00;}
-.portfBigPic {box-shadow: 1px 1px 10px 1px #20EB00;}
-.portfolio a, .portfolio img {border-radius: 30px;}
-.portfRow1, .portfRow2, .portfRow3 {
+#portfolio_ {top:-90px;}
+.portfolio {
     display: flex;
-    justify-content: space-evenly;
-    margin: 25px auto 0 auto;
+    justify-content: center;
+    margin-top: 90px;
+    padding-top: 10px;
+}
+.portfolio a, .portfolio img {border-radius: 30px;}
+.portfBigPic {
+    width: 800px;
+    height: 514px;
+    text-align: center;
+    object-fit: cover;
+    box-shadow: 1px 1px 10px 1px #20EB00;
 }
 .portfRow1 a:hover, .portfRow2 a:hover, .portfRow3 a:hover {
   opacity: 0.65;
 }
-.portfRow3 {margin-bottom: 7px;}
-.portfPic {width: 320px;}
-.portfBigPic {width: 670px; height: 390px;}
-.portfRowColumn {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+.portfPic {
+    width: 384px;
+    height: 240px;
+    box-shadow: 0px 0px 10px 0px #20EB00;
 }
+
+.grid {
+    display: grid;
+    grid-row-gap: 30px;
+    grid-column-gap: 35px;
+    grid-template-columns: auto;
+    grid-auto-rows: auto;
+    grid-template-areas:
+    "sm1 sm2 sm3 sm4"
+    "sm5 big big sm6"
+    "sm7 big big sm8"
+    "sm9 sm10 sm11 sm12";
+    text-align: center;
+}
+.smallPlace2   {display: block; grid-area: sm2;}
+.smallPlace1   {display: block; grid-area: sm1;}
+.smallPlace3   {display: block; grid-area: sm3;}
+.smallPlace4   {display: block; grid-area: sm4;}
+.smallPlace5   {display: block; grid-area: sm5;}
+.smallPlace6   {display: block; grid-area: sm6;}
+.smallPlace7   {display: block; grid-area: sm7;}
+.smallPlace8   {display: block; grid-area: sm8;}
+.smallPlace9   {display: block; grid-area: sm9;}
+.smallPlace10 {display: block; grid-area: sm10;}
+.smallPlace11 {display: block; grid-area: sm11;}
+.smallPlace12 {display: block; grid-area: sm12;}
+.bigPlace        {display: block; grid-area: big;}
+
 .h2 {
   font-family: "KyivBold", Arial, Helvetica, sans-serif;
-  font-size: 50px;
+  font-size: 63px;
 }
 .about {
   color: white;
@@ -193,37 +234,37 @@ nav a:hover {color:#20EB00; border-bottom: solid 2px #20EB00; padding: 12px 0 10
 #letsButton {
   display: flex;
   font-family: "KyivMedium", Arial, Helvetica, sans-serif;
-  font-size: 24px;
-  width: 240px;
-  height: 60px;
+  font-size: 30px;
+  width: 285px;
+  height: 70px;
   margin: 50px auto 20px auto;
   background-image: linear-gradient(to right, #17CA26, #089368);
-  border-radius: 30px;
+  border-radius: 20px;
 }
 .letsButtonHover {box-shadow: 0px 0px 30px 0px #33FF13; cursor: pointer;}
 #letsButton span {margin: 15px auto; user-select: none;}
-.img_about {width: 28px;}
+.img_about {width: 34px; height: 34px;}
 .aboutContent {
   display: flex;
-  max-width: 750px;
+  max-width: 850px;
   margin: 108px auto 80px auto;
 }
-.aboutContentColumn1 {width: 445px;}
+.aboutContentColumn1 {width: 500px;}
 .aboutContentColumn2 {
   width: 230px;
-  margin-left: auto;
+  margin-left: 100px;
 }
 .aboutContentHeader {
   display: flex;
   align-items: center;
   font-family: "KyivMedium", Arial, Helvetica, sans-serif;
-  font-size: 20px;
+  font-size: 24px;
 }
 .aboutContentHeader div {margin-left: 10px;}
 .aboutContentTxt {
   text-align: left;
   font-family: Verdana, sans-serif;
-  font-size: 13px;
+  font-size: 15px;
 }
 .aboutContentTxt ul {
   margin-top: 20px;
@@ -233,39 +274,40 @@ nav a:hover {color:#20EB00; border-bottom: solid 2px #20EB00; padding: 12px 0 10
 .aboutStat {
   display: flex;
   justify-content: space-between;
-  max-width: 870px;
+  max-width: 950px;
   margin: 0 auto;
   font-family: "Grotesque", Arial, sans-serif;
-  font-size: 13px;
+  font-size: 16px;
 }
 .aboutStatColumnHeader {
   font-family: "KyivMedium", Arial, Helvetica, sans-serif;
-  font-size: 32px;
+  font-size: 40px;
   margin-bottom: 10px;
 }
+#advantages_ {top: 50px;}
 .advn1 {
   text-align: center;
   margin-top: 170px;
 }
 .advnContent {
   display: flex;
-  max-width: 960px;
+  max-width: 1050px;
   margin: 90px auto 0 auto;
   font-family: "Grotesque", Arial, sans-serif;
-  font-size: 13px;
+  font-size: 15px;
   text-align: center;
 }
 .advnLeftColumn {
-  width: 415px;
+  width: 495px;
 }
 .advnTopBlock {
   display: flex;
   align-items: center;
-  width: 412px;
-  height: 97px;
+  width: 100%;
+  height: 115px;
   border: 1px solid #20EB00;
-  border-radius: 50px;
-  margin-bottom: 45px;
+  border-radius: 20px;
+  margin-bottom: 60px;
 }
 .advnTopBlock img {
   width: 67px;
@@ -278,20 +320,33 @@ nav a:hover {color:#20EB00; border-bottom: solid 2px #20EB00; padding: 12px 0 10
 }
 .advnRow {
   display: flex;
-  margin-bottom: 30px;
+  justify-content: space-between;
+  margin-bottom: 50px;
 }
 .advnRowColumn {
-  width: 50%;
+  width: 45%;
 }
-.advnRowColumn div {
+.iPic {
+    width: 80px !important;
+    height: 80px;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 0 auto 20px auto;
+}
+.i01 {
+    background-image: url(pic/i01.png);
+    width: 80px !important;
+    height: 80px;
+    background-repeat: no-repeat;
+    background-position: center;    
+}
+.i02 {background-image: url(pic/i02.png);}
+.i03 {background-image: url(pic/i03.png);}
+.i04 {background-image: url(pic/i04.png);}
+.i05 {background-image: url(pic/i05.png);}
+
+.advnText {
   padding: 0 15px;
-}
-.advnRowImg {
-  width: 98px;
-  height: 98px;
-}
-.txt4 {
-  padding: 0 10px !important;
 }
 .serv {
   text-align: center;
@@ -299,40 +354,41 @@ nav a:hover {color:#20EB00; border-bottom: solid 2px #20EB00; padding: 12px 0 10
 }
 .servAnonse {
   font-family: "Grotesque", Arial, sans-serif;
-  font-size: 13px;
+  font-size: 16px;
   text-align: center;
   margin-bottom: 50px;
 }
 .servContent {
-  max-width: 960px;
-  margin: 0 auto;
+  max-width: 1000px;
+  margin: 95px auto 0 auto;
   color: #4cda3f;
 }
 .servContentRow {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 75px;
+  margin-bottom: 120px;
 }
 .servContentPos {
   text-align: center;
+  font-size: 20px;
 }
-.imgPtype1 {
-  width: 192px;
+
+.imgPic {
+    width: 170px;
+    height: 160px;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-bottom: 30px;
 }
-.servContentPos2 {
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-}
-.imgPtype2 {
-  width: 160px;
-}
-.servContentPos2 img {
-  margin: auto 0;
-}
-.servContentPos2 div {
-  margin: 0;
-}
+.imgPic1 {background-image: url(pic/p1.png);}
+.imgPic2 {background-image: url(pic/p2.png);}
+.imgPic3 {background-image: url(pic/p3.png);}
+.imgPic4 {background-image: url(pic/p4.png);}
+.imgPic5 {background-image: url(pic/p5.png);}
+.imgPic6 {background-image: url(pic/p6.png);}
+.imgPic7 {background-image: url(pic/p7.png);}
+.imgPic8 {background-image: url(pic/p8.png);}
+
 .testmn {
   text-align: center;
   margin-top: 175px;
@@ -549,31 +605,32 @@ width:17px; height:30px; background-image:url('pic/nright.png');
 /* End: Talk Form */
 
 
-/* Desktops */
-@media all and (min-width:1376px) {
-section, .bg {max-width:1440px !important;}
-} /* End: Desktops */
+/* Wide screens */
+@media all and (min-width:2250px) {
+.grid {
+    grid-template-areas:
+    "sm1 sm2 big big sm5 sm6"
+    "sm3 sm4 big big sm7 sm8"
+    "sm9 sm10 big big sm11 sm12"
+    !important;
+}
+.portfPic {
+    width:  323px !important;
+    height: 201px !important;
+}
+.portfBigPic {
+    width: 1054px !important;
+    height: 670px !important;
+    object-fit: initial !important;
+}
+}/* End: Wide screens */
 
 
 /* Pads */
 @media all and (min-width:768px) and (max-width:1375px) {
 .desk, section, .bg {max-width:1375px !important;}
-.portfRow1, .portfRow3 {
-  flex-wrap: wrap;
-  width: 700px;
-  margin: 0 auto;
-}
 .portfPic {margin-top: 20px;}
-.portfRow2 {
-  width: 700px;
-  margin: 0 auto;
-}
-.portfBigPicLink2 {display: none;}
-.portfBigPicLink1 {
-  display: flex;
-  justify-content: center;
-  margin-top: 15px;
-}
+
 .bg {                         /* BACKGROUNDS */
   background-position:
     137px 901px,     /* черно-зеленый крест слева */
@@ -784,10 +841,10 @@ section {
   width: 50vw;
 }
 #ttm_ {margin-top: 90px; top: -70px;}
-#cont_ {margin-top: 50px; top: -70px;}
 .invite {
-  margin-top: 0;
+  margin-top: 400px;
   margin-right: 0;
+  margin-bottom: 100px;
   text-align: center;
 }
 .inviteHeader {
@@ -832,7 +889,6 @@ section {
   margin-bottom: 30px;
 }
 
-#portfolio_ {top: 110px;}
 #about_ {top: 170px;}
 #enterDesk {display:none !important;}
 #enterMobi {
@@ -865,24 +921,12 @@ section {
   bottom: -115px;
   right: 0;
 }
-.portfRow1,
-.portfRow3 {
-  flex-wrap: wrap;
-  width: 100%;
-  margin: 0 auto;
-}
 .portfPic {margin-top: 10px; width: 170px;}
-.portfBigPicLink1 {
-  display: block;
-  padding: 15px 15px 0 15px;
-}
-.portfBigPic {width: 100%; height: auto;}
-.portfRow2 {width: 100%; margin: 0 auto;}
-.portfBigPicLink2 {display: none;}
 .portfPic,
 .portfBigPic {
   box-shadow: 0px 0px 6px 0px #20EB00;
 }
+#portfolio_ {top: -90px;}
 .portfolio a, .portfolio img {border-radius: 9px;}
 .folder {
   width: 214px !important;
