@@ -49,3 +49,10 @@ for(let block of blocks) {
         block.querySelector("img").src = "/pic/picA" + number + ".png";
     });
 };
+
+/* Open-Close lang menu */
+function lngMenu(){
+    document.getElementById("langNL").classList.toggle("dsp");
+    document.getElementById("langEN").onclick = "";
+};
+

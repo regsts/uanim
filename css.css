@@ -123,6 +123,12 @@ a  {color:inherit; text-decoration:inherit;}
     url(pic/bg15.png),        /* зеленый крест для Сервисов */
     url(pic/bg17.png),        /* зеленый крест после Сервисов */
     url(pic/bg16.png),        /* серый крест после Сервисов */
+    url(pic/bg32.png),        /* волны слева от Команды */
+    url(pic/bg34.png),        /* большой крест слева от Команды */
+    url(pic/bg33.png),        /* малый крест слева от Команды */
+    url(pic/bg35.png),        /* шар подсветки */
+    url(pic/bg37.png),        /* двойной крест справа от Команды */
+    url(pic/bg31.png),        /* шар подсветки скульптуры */
     url(pic/bg30.png);        /* скульптура */
   background-position:
     300px 1151px,    /* черно-зеленый крест слева */
@@ -144,7 +150,13 @@ a  {color:inherit; text-decoration:inherit;}
     60px 3380px,       /* зеленый крест для Сервисов */
     1520px 4150px,    /* зеленый крест после Сервисов */
     1550px 4090px,    /* серый крест после Сервисов */
-    300px bottom;      /* скульптура */
+    0px 4600px,         /* волны слева от Команды */
+    200px 5200px,     /* большой крест слева от Команды */
+    300px 5200px,     /* малый крест слева от Команды */
+    0px 4300px,         /* шар подсветки */
+    1600px 5500px,    /* двойной крест справа от Команды */
+    300px  5700px,            /* шар подсветки скульптуры */
+    0  bottom;             /* скульптура */
   background-size:
     198px,        /* черно-зеленый крест слева */
     91px,          /* малый светящийся крест правее */
@@ -165,7 +177,13 @@ a  {color:inherit; text-decoration:inherit;}
     292px,         /* зеленый крест для Сервисов */
     133px,         /* зеленый крест после Сервисов */
     256px,         /* серый крест после Сервисов */
-    730px;         /* скульптура */
+    933px,         /* волны слева от Команды */
+    100px,         /* большой крест слева от Команды */
+    63px,           /* малый крест слева от Команды */
+    2090px,        /* шар подсветки */
+    183px,         /* двойной крест справа от Команды */
+    auto,            /* шар подсветки скульптуры */
+    1075px;         /* скульптура */
   background-repeat:no-repeat;
   margin: 0 auto;
 }
@@ -393,8 +411,14 @@ a  {color:inherit; text-decoration:inherit;}
   text-align: center;
   margin-top: 175px;
 }
+#team_ {
+    top: 170px;
+}
+.ourteam {
+    text-align: center;
+    margin-top: 300px;
+}
 
-/* Carousel */
 .owl-carousel.owl-drag .owl-item {-ms-touch-action: pan-y;touch-action: pan-y;-webkit-user-select: none;-moz-user-select: none;-ms-user-select: none;user-select: none;}
 .owl-carousel .owl-nav.disabled,  .owl-carousel .owl-nav .owl-prev,  .owl-carousel .owl-nav .owl-next,  .owl-carousel .owl-dot {cursor: pointer;user-select: none;}
 .owl-carousel .owl-item {
@@ -422,10 +446,10 @@ padding: 0 !important;
 font: 1px;
 }
 .owl-carousel .owl-nav button.owl-prev { /* кнопка Влево */
-width:17px; height:30px; background-image:url('pic/nleft.png');
+width:40px; height:41px; background-image:url('pic/nleft.png');
 }
 .owl-carousel .owl-nav button.owl-next { /* кнопка Вправо */
-width:17px; height:30px; background-image:url('pic/nright.png');
+width:40px; height:41px; background-image:url('pic/nright.png');
 }
 .protector {
   position: absolute;
@@ -473,58 +497,120 @@ width:17px; height:30px; background-image:url('pic/nright.png');
 .blockTxtActiv {
   display: block !important;
 }
-/* End: Carousel */
 
+.folderTeam {
+  position: relative;
+  width:1070px !important;
+  margin: 60px auto 0 auto;
+  overflow: hidden;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+.blockTeam {
+    border: 1px solid transparent;
+    background-color: transparent;
+    padding-top: 10px;
+}
+.blockTeam img {
+    width: 175px !important;
+    margin: 0 auto;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px 3px #20EB00;
+}
+.blockTxtTeam {
+    text-align: center;
+    padding-top: 20px;
+}
+.teamName {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #20EB00;
+    margin-bottom: 3px;
+}
+.teamRole {
+    font-family: Verdana, sans-serif;
+    font-size: 15px;
+}
+#sectionContacts {
+    margin-top: 600px;
+}
 .invite {
-  margin-top: 250px;
-  margin-right: 20%;
+  margin-right: 17%;
   text-align: right;
 }
 .inviteHeader {
   font-family: "KyivBold", Arial, Helvetica, sans-serif;
-  font-size: 37px;
+  font-size: 63px;
+  font-weight: 700;
   margin-bottom: 20px;
 }
 .inviteTxt {
   font-family: "Grotesque", Arial, sans-serif;
-  font-size: 21px;
+  font-size: 24px;
 }
 .AdviceButton {
   display: flex;
   font-family: "KyivMedium", Arial, Helvetica, sans-serif;
-  font-size: 24px;
-  width: 240px;
-  height: 60px;
-  margin: 38px 0 0 auto;
+  font-size: 28px;
+  font-weight: 500;
+  width: 280px;
+  height: 70px;
+  margin: 50px 0 0 auto;
   background-image: linear-gradient(to right, #17CA26, #089368);
-  border-radius: 30px;
+  border-radius: 20px;
 }
 .AdviceButton span {margin: 15px auto; user-select: none;}
 .AdviceButtonHover {box-shadow: 0px 0px 30px 0px #33FF13;}
 .contacts {
   display: flex;
   align-items: flex-end;
-  margin: 70px 11% 0 auto;
+  margin: 0 11% 0 auto;
   height: 258px;
   color: white;
   font-family: "KyivBold", Arial, Helvetica, sans-serif;
   font-size: 22px;
 }
+.diffLinks {
+    flex-grow: 1;    
+    margin-right: 100px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    font-family: "Grotesque", Arial, Helvetica, sans-serif;
+    font-size: 26px;    
+}
+.TelMail, .bank, .part {
+    display: flex;
+    margin: 0 0 0 auto;
+}
+.TelMail {
+    margin-bottom: 30px;
+}
+.bank {
+    margin-bottom: 30px;
+}
+.part {
+    font-size: 20px;
+}
+.part a {
+    color: cornflowerblue;
+}
 .contactsTel {
-  margin: 0 90px 50px auto;
+    margin-right: 70px;
 }
 .contactsEmail {
-  margin: 0 90px 50px 0;
 }
 .contactsLinks {
-  margin: 0 20px 50px 0;
+  margin: 0 20px 20px 0;
 }
 .contactsLinks > a {
   display: block;
   margin-top: 15px;
 }
 .contactsLinks img {
-  width: 25px;
+  width: 30px;
 }
 
 
@@ -674,6 +760,9 @@ width:17px; height:30px; background-image:url('pic/nright.png');
     50%;           /* скульптура  ИЗМЕНЕНО */
 }
 .folder {
+  width: 642px !important;
+}
+.folderTeam {
   width: 642px !important;
 }
 
@@ -929,6 +1018,9 @@ section {
 #portfolio_ {top: -90px;}
 .portfolio a, .portfolio img {border-radius: 9px;}
 .folder {
+  width: 214px !important;
+}
+.folderTeam {
   width: 214px !important;
 }
 .bg {                         /* BACKGROUNDS */

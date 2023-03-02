@@ -46,12 +46,6 @@
         </div>
     </div>
 
-    <script> /* Open-Close lang menu */
-    function lngMenu(){
-        document.getElementById("langNL").classList.toggle("dsp");
-        document.getElementById("langEN").onclick = "";
-    }
-    </script>
   </div> <!-- End: Desk menu ******************************-->
 
   <div class="mobi">    <!-- Mobi menu button -->
@@ -245,7 +239,7 @@
   <a class="anchor" id="ttm_"></a>
   <section>    <!-- Testimonials -->
     <div class="h2 testmn">Testimonials</div>
-    <div class="folder"><div class="blocks"><div class="protector"></div><div class="owl-carousel"> <!-- Carousel -->
+    <div class="folder"><div class="blocks"><div class="protector"></div><div class="owl-carousel">
         <div class="item block">
             <img src="pic/picA01.png" alt="Client">
             <div class="blockTxt">U Animation developed a full content case for our conference. The team helped us at all stages: from a creative idea to a multimedia show. Extremely professional and serious attitude.</div>
@@ -286,18 +280,91 @@
             <img src="pic/picA10.png" alt="Client">
             <div class="blockTxt">These guys were able to make a few minutes of animated content in the week leading up to our investor meeting. They really saved our presentation. Highly recommended.</div>
       </div> <!-- End: block -->
-    </div></div></div> <!-- End: Carousel -->
+    </div></div></div>
   </section> <!-- End: Testimonials -->
 
-  <section>    <!-- section Contacts -->
+  <a class="anchor" id="team_"></a>
+  <section>    <!-- Our Team -->
+    <div class="h2 ourteam">Our Team</div>
+    <div class="folderTeam"><div class="blocks"><div class="owl-carousel">
+        <div class="item blockTeam">
+            <img src="pic/Dekker.jpg" alt="Client">
+            <div class="blockTxtTeam">
+                <div class="teamName">Frank Dekker</div><div class="teamRole">Founder</div>
+            </div>
+      </div>
+        <div class="item blockTeam">
+            <img src="pic/Markova.jpg" alt="Client">
+            <div class="blockTxtTeam">
+                <div class="teamName">Ava Markova</div><div class="teamRole">Co-founder</div>
+            </div>
+      </div>
+        <div class="item blockTeam">
+            <img src="pic/Kovtun.jpg" alt="Client">
+            <div class="blockTxtTeam">
+                <div class="teamName">Artemis Kovtun</div><div class="teamRole">Art director</div>
+            </div>
+      </div>
+        <div class="item blockTeam">
+            <img src="pic/Sorokin.jpg" alt="Client">
+            <div class="blockTxtTeam">
+                <div class="teamName">Kirill Sorokin</div><div class="teamRole">Client manager</div>
+            </div>
+      </div>
+        <div class="item blockTeam">
+            <img src="pic/Den.jpg" alt="Client">
+            <div class="blockTxtTeam">
+                <div class="teamName">Joey Van Den</div><div class="teamRole">Sales Manager</div>
+            </div>
+      </div>
+        <div class="item blockTeam">
+            <img src="pic/Bakiyev.jpg" alt="Client">
+            <div class="blockTxtTeam">
+                <div class="teamName">Yerzhan Bakiyev</div><div class="teamRole">2D Designer</div>
+            </div>
+      </div>
+        <div class="item blockTeam">
+            <img src="pic/Shnaider.jpg" alt="Client">
+            <div class="blockTxtTeam">
+                <div class="teamName">Anastasia Shnaider</div><div class="teamRole">2D Designer</div>
+            </div>
+      </div>
+        <div class="item blockTeam">
+            <img src="pic/Mishenin.jpg" alt="Client">
+            <div class="blockTxtTeam">
+                <div class="teamName">Vladislav Mishenin</div><div class="teamRole">2D Designer</div>
+            </div>
+      </div>
+        <div class="item blockTeam">
+            <img src="pic/Nowak.jpg" alt="Client">
+            <div class="blockTxtTeam">
+                <div class="teamName">Anjey Nowak</div><div class="teamRole">3D Designer</div>
+            </div>
+      </div>
+        <div class="item blockTeam">
+            <img src="pic/Coninck.jpg" alt="Client">
+            <div class="blockTxtTeam">
+                <div class="teamName">Johanna de Coninck</div><div class="teamRole">Graphic Designer</div>
+            </div>
+      </div>
+    </div></div></div>
+  </section> <!-- End: Our Team -->
+
+  <section id="sectionContacts">    <!-- section Contacts -->
     <div class="invite">
-      <div class="inviteHeader">Don't know what to choose?</div>
-      <div class="inviteTxt">Feel free to contact us, and<br>we will give you a tip!</div>
+      <div class="inviteHeader">Don't know what<br/> to choose?</div>
+      <div class="inviteTxt">Feel free to contact us, and we<br> will give you a tip!</div>
       <div class="AdviceButton" onclick="talk()" onmouseenter="this.classList.add('AdviceButtonHover')"; onmouseleave="this.classList.remove('AdviceButtonHover')";><span>Advice me</span></div>
     </div>
     <div class="contacts">
-      <div class="contactsTel"><a href="tel:+31643473001">+316 43473001</a></div>
-      <div class="contactsEmail"><a href="mailto:hello@uanimation.nl">hello@uanimation.nl</a></div>
+        <div class="diffLinks">
+            <div class="TelMail">
+                <div class="contactsTel"><a href="tel:+31643473001">+316 43473001</a></div>
+                <div class="contactsEmail"><a href="mailto:hello@uanimation.nl">hello@uanimation.nl</a></div>
+            </div>
+            <div class="bank">AS „Swedbank”: LV91HABA0551029766418</div>
+            <div class="part">Uanimation is a part of the company &nbsp; <a href="http://rf.nl">RF.NL</a></div>
+        </div>
       <div class="contactsLinks">
         <a href="#" target="_blank" title="Whatsup"><img src="pic/socNet1_white.svg" alt="" onmouseenter="this.src='pic/socNet1_green.svg'" onmouseleave="this.src='pic/socNet1_white.svg'"></a>
         <a href="#" target="_blank" title="LinkedIn"><img src="pic/socNet2_white.svg" alt="" onmouseenter="this.src='pic/socNet2_green.svg'" onmouseleave="this.src='pic/socNet2_white.svg'"></a>
