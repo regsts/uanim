@@ -17,6 +17,7 @@ function mobiMenuOFF() {
     el.classList.add("openedMenu");
 }
 
+
 // Управление каруселью
 $(document).ready(function () {
     var owl = $('.owl-carousel');
@@ -33,6 +34,9 @@ $(document).ready(function () {
         }
     })
 });
+
+
+
 
 // В разделе Testimonials обрабатываем события наведения и увода курсора мыши
 const blocks = document.querySelectorAll('.block');
