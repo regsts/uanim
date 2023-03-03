@@ -4,12 +4,16 @@ src: url("KyivTypeSans-Bold2.ttf") format("truetype");
 font-style: normal;
 font-weight: normal;
 }
+
+
 @font-face {
 font-family: "KyivMedium";
 src: url("KyivTypeSans-Medium2.ttf") format("truetype");
 font-style: normal;
 font-weight: normal;
 }
+
+
 @font-face {
 font-family: "Grotesque";
 src: url("NeuveGrotesque.ttf") format("truetype");
